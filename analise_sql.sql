@@ -78,8 +78,7 @@ FROM
 WHERE
     c.subtipo = "Perturbação do sossego";
 
--- 8 Quantos chamados desse subtipo foram abertos em cada evento?
-
+-- 8
 SELECT e.evento, COUNT(c.id_chamado) AS total_chamados
 FROM
     `datario.adm_central_atendimento_1746.chamado` c
@@ -92,8 +91,8 @@ GROUP BY
     e.evento
 ORDER BY total_chamados DESC;
 
--- 9 Qual evento teve a maior média diária de chamados abertos desse subtipo?
-
+-- 9
+-- https://stackoverflow.com/questions/50351517/difference-between-two-dates-in-dates-using-google-bigquery
 SELECT subquery.evento, SUM(subquery.total_chamados) / (
         DATE_DIFF (
             MAX(subquery.data_fim), MIN(subquery.data_inicio), DAY
@@ -117,8 +116,8 @@ GROUP BY
 ORDER BY media_diaria DESC
 LIMIT 1;
 
--- 10 Compare as médias diárias de chamados abertos desse subtipo durante os eventos específicos (Reveillon, Carnaval e Rock in Rio) e a média diária de chamados abertos desse subtipo considerando todo o período de 01/01/2022 até 31/12/2023.
-
+-- 10
+-- https://stackoverflow.com/questions/50351517/difference-between-two-dates-in-dates-using-google-bigquery
 WITH
     media_eventos AS (
         SELECT subquery.evento, SUM(subquery.total_chamados) / (
