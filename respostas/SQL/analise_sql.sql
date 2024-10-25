@@ -48,8 +48,6 @@ FROM
 WHERE
     DATE(c.data_inicio) = "2023-04-01"
     AND b.id_bairro IS NULL;
--- 73 chamados sem bairro associado
--- verificando outros dias do mesmo mes podemos concluir que há uma predominância de chamados tipo "Onibus" e "Atendimento ao cidadão". Podemos assumir que esses chamados os campos nao sejam requeridos. Caso contrario haja algum erro no momento da inserção dos dados especificamente para esses tipos.
 
 -- 6
 SELECT count(*) as chamados
