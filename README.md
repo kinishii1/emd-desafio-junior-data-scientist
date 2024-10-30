@@ -6,6 +6,10 @@ Respostas se encontram em `respostas/Python` e `respostas/SQL`.
 
 Dashboard Looker Studio para as questoes de visualização de dados se encontra [aqui](https://lookerstudio.google.com/s/glSx5IH2Qu0).
 
+# 📄 Explicação de minhas soluções 
+
+O link para a explicação de cada resposta encontrasse [aqui](https://doc-desafio-rio.vercel.app/). 
+
 # 🛠️ Ferramentas Utilizadas
 
 - **Python**:
@@ -40,10 +44,6 @@ df.head()
 ```
 
 Pedira para você fazer a autenticação pelo Google. Uma vez autenticado conseguira rodar as queries normalmente.
-
-# 📄 Explicação de minhas soluções 
-
-O link para a explicação de cada resposta encontrasse [aqui](https://doc-desafio-rio.vercel.app/). 
 
 # 📚 Referências
 
