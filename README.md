@@ -46,6 +46,6 @@ df.head()
 Pedira para você fazer a autenticação pelo Google. Uma vez autenticado conseguira rodar as queries normalmente.
 
 # 📚 Referências
-
-- [Documentação do basedosdados](https://docs.dados.rio/tutoriais/como-acessar-dados/)
+- [Documentação do datario](https://docs.dados.rio/tutoriais/como-acessar-dados/)
+- [Documentação do datario](https://basedosdados.github.io/mais/)
 
