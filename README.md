@@ -1,6 +1,6 @@
 # Desafio Técnico - Cientista de Dados Júnior
 
-Respostas para os desafios contidos nos arquivos `perguntas_sql.md` e `perguntas_api.md`.
+Respostas para as perguntas contidos nos arquivos `perguntas_sql.md` e `perguntas_api.md`.
 
 Respostas se encontram em `respostas/Python` e `respostas/SQL`.
 
